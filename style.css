@@ -1,0 +1,516 @@
+
+*{
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: arial, tahoma;
+}
+
+/*Start myFramework*/
+.container{
+    width: 1200px;
+    margin: auto;
+    position: relative
+}
+.table{
+    height: 100%;
+    display: table
+}
+.text-center{
+    text-align: center
+}
+
+.upper{
+    text-transform: uppercase
+}
+
+.main-color{
+    color: #f7600e
+}
+.main-background{
+    background-color: #f7600e
+}
+.hidden{
+    display: none
+}
+::-webkit-input-placeholder {
+    font-size: 14px
+}
+:-moz-input-placeholder {
+    font-size: 14px
+}
+:-ms-input-placeholder {
+    font-size: 14px
+}
+.overlay{
+    background: rgba(49, 55, 61, 0.7);
+    width: 100%;
+    height: 100%
+}
+/*End myFramework*/
+
+/*Start Header*/
+.header{
+    background: url('laptops.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+     color: #fff;
+    
+}
+.header .overlay{
+    background: rgba(49, 55, 61, 0.7);
+    width: 100%;
+    height: 100%;
+}
+.header .navbar{
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+    top: 0;
+    left: 15px;
+    width: 100%;
+    font-size: 24px;
+}
+.header .navbar .links{
+    position: absolute;
+    right: 100px;
+}
+.header .navbar .links i{
+    margin-left: 5px;
+}
+.header .intro h1{
+    margin: 0;
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 140px
+}
+.header .intro p{
+    margin: 5px 0 40px;
+    line-height: 1.9;
+    font-size: 20px;
+}
+.header .buttons button{
+    background: transparent;
+    padding: 10px 0;
+    width: 180px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+.header .buttons button:hover{
+    background: #f7600e;
+    border: 1px solid #f7600e;
+    
+}
+.header .arrow{
+   position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+.header .arrow .fa{
+    border: 2px solid #7b7b7b;
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+    line-height: 33px;
+    cursor: pointer;
+    position: absolute;
+    animation: animate 1.5s linear infinite 
+}
+@keyframes animate{
+    0%{
+        top: -10%
+    }
+     40%{
+        top: 60%
+    }
+    60%{
+        top: 30%
+    }
+    80%{
+        top: 60%
+    }
+    100%{
+        top: 100%
+    }
+}
+/*End Header*/
+
+/*Start Features*/
+.features{
+    padding: 80px 0;
+    overflow: hidden
+}
+.features .box{
+    width: 24%;
+    float: left;
+}
+.features .box:last-child{
+    margin-right: 0
+}
+.features .box i{
+    color: #f7600e;
+    border: 1px solid #ccc;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    line-height: 120px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+.features .box i:hover{
+    background-color: #f7600e;
+    border: 1px solid #ccc;
+    color: #fff
+}
+.features .box h3{
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #505050
+}
+.features .box p{
+    line-height: 2;
+    color: #888;
+}
+/*End Features*/
+
+/*Start Subscribe*/
+.subscribe{
+    background: url('traval.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 50px 0;
+    color: white
+}
+.subscribe form{
+    padding: 100px 0;
+    width: 700px;
+    margin: auto;
+    text-align: center
+}
+.subscribe form input[type="email"]{
+    padding: 0 10px;
+    width: 320px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 2px;
+    border: 0;
+    height: 37px;
+    line-height: 37px
+}
+.subscribe form button{
+    padding: 10px;
+    width: 220px;
+    background-color: #f7600e;
+    border: 0;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 14px
+}
+
+/*End Subscribe*/
+
+/*Start Our Work*/
+.our-work{
+    padding: 10px;
+    margin-left: 5%
+}
+.our-work h2{
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 0;
+    text-align: center
+}
+.our-work h2 ~ p{
+    line-height: 2;
+    transform: translateX(30%)
+}
+.our-work .show-more{
+    background-color: transparent;
+    border: 1px solid #333;
+    /* border: 0; */
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 40%;
+    color: #777;
+     -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+.our-work .show-more:hover{
+   background-color: #f7600e;
+    border: 1px solid #ccc;
+    color: #fff
+}
+.our-work .items-box {
+    overflow: hidden
+}
+.our-work .items-box .item{
+    float: left;
+    width: 14%;
+    overflow: hidden;
+    margin-left: 5%;
+    border-radius: 10px;
+    position: relative
+}
+.our-work .items-box .item:hover .over{
+    display: block
+}
+.our-work .items-box .item .over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247, 96, 14, .8);
+    color: #fff;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    display: none
+}
+.our-work .item .over h4{
+    
+}
+
+.our-work .item .over button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+.our-work .item .over button:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: #f7600e;
+}
+/*End Our Work*/
+/*Start Testimonial*/
+.testim{    
+    background: url('Testimonial-Background.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.testim .client{
+    padding: 50px 0;
+    color: #fff;
+    font-size: 20px
+}
+.testim .client img{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    color: #008000
+}
+.testim .client p{
+    line-height: 2;
+    font-style: italic;
+}
+.testim .fa-chevron-right,
+.testim .fa-chevron-left{
+     position: absolute;
+     top: 45%;
+    color: #999;
+    cursor: pointer
+}
+.testim .fa-chevron-right:hover,
+.testim .fa-chevron-left:hover{
+    color: #f7600e
+}
+.testim .fa-chevron-right{
+    right: 0
+}
+.testim .fa-chevron-left{
+    left: 0
+}
+/*End Testimonial*/
+
+/*START our Team*/
+.our-team{
+    padding: 50px 0;
+}
+.our-team h2{
+    font-size: 35px;
+      margin-bottom: 0
+}
+.our-team .the-team{
+    overflow: hidden
+}
+.our-team .the-team .person{
+    float: left;
+    width: 24%;
+    margin-left: 1%;
+    color: #888;
+}
+.our-team .the-team .person img{
+    width: 250px;
+    height: 250px;
+    margin: 0 10px
+}
+.our-team .the-team .person img:not(:last-child){
+    margin-right: 15px
+}
+.our-team .the-team .person:hover img{
+    filter: none;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+.our-team .the-team .person:hover{
+    color: #555
+}
+.our-team .the-team .social-icons:hover .fa-facebook{
+    background-color: #3b5998
+}
+.our-team .the-team .social-icons:hover .fa-twitter{
+    background-color: #1da1f2
+}
+.our-team .the-team .social-icons:hover .fa-google-plus{
+    background-color: #dd4b39
+}
+.our-team .the-team .person img{
+    filter: gray;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    transition: 0.5s
+}
+.our-team .the-team .person p{
+    font-size: 15px
+}
+.our-team .the-team .social-icons i{
+    background-color: #ddd;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    border-radius: 50%
+}
+
+/*end our Team*/
+
+/*Start contact*/
+.contact{
+    background: url('miami.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.contact .overlay{
+    padding: 50px 0;
+    color: white
+}
+.contact h2{
+    font-size: 35px
+}
+.contact form{
+    width: 700px;
+    margin: 50px auto;
+    text-align: center;
+    overflow: hidden
+}
+.contact form input[type="text"],
+.contact form input[type="email"]{
+    width: 48%;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc
+   
+}
+.contact form input[type="text"]{
+    
+     float: left
+}
+.contact form input[type="email"]{
+    float: right
+}
+.contact form textarea{
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 10px;
+    height: 140px;
+    border-radius: 10px;
+    border: 1px solid #ccc
+}
+.contact form .info{
+    overflow: hidden;
+    margin-top: 10px
+}
+.contact form .info button{
+    float: left;
+    padding: 10px;
+    width: 220px;
+    background-color: #f7600e;
+    border: 0;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px
+}
+.contact form .info .form-icons{
+    float: right
+}
+.contact form .info .form-icons i{
+    background-color: #9da1a5;
+    width: 40px;
+    height:40px;
+    line-height: 40px;
+    color: white;
+    border-radius: 50%
+}
+
+.contact form .info .form-icons .fa-facebook{
+    background-color: #3b5998
+}
+.contact form .info .form-icons .fa-twitter{
+    background-color: #1da1f2
+}
+.contact form .info .form-icons .fa-google-plus{
+    background-color: #dd4b39
+}
+/*end contact*/
+
+/*Start footer*/
+.footer{
+    background-color: #3b434c;
+    color: #fff;
+    overflow: hidden;
+    padding: 30px 0
+}
+.footer .copyright{
+    float: left;
+    margin-left: 5%
+}
+.footer .design{
+    float: right;
+    margin-right: 5%
+}
+/*End footer*/
